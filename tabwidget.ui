@@ -1,0 +1,713 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TabWidget</class>
+ <widget class="QTabWidget" name="TabWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1051</width>
+    <height>481</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>TabWidget</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QTabWidget::pane { /* The tab widget frame */
+    border-top: 2px solid #C2C7CB;
+}</string>
+  </property>
+  <property name="currentIndex">
+   <number>0</number>
+  </property>
+  <widget class="QWidget" name="MOBILITE">
+   <attribute name="title">
+    <string>Mobilite</string>
+   </attribute>
+   <widget class="QTableView" name="tableView_Mobilite">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>71</y>
+      <width>1051</width>
+      <height>281</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_rechercheEtudiant">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>46</y>
+      <width>221</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_pays">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>402</y>
+      <width>151</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Recherche par pays</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_duree">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>430</y>
+      <width>151</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Recherche par duree</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_ecole">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>403</y>
+      <width>151</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Recherche par ecole</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_classe">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>430</y>
+      <width>151</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Recherche par classe</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_newMobilite">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>39</y>
+      <width>121</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Nouvelle Mobilite</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_rechercheEleve">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>48</y>
+      <width>131</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Rechercher un élève :</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_statistiquesMobilite">
+    <property name="geometry">
+     <rect>
+      <x>920</x>
+      <y>38</y>
+      <width>121</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Statistiques</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_actualiserMobilite">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>38</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Actualiser</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line_filtreRechercheMobilite">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>380</y>
+      <width>401</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_filtreRechercheMobilite">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>370</y>
+      <width>151</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Filtre recherche</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="PARTENRIAT">
+   <attribute name="title">
+    <string>Partenariat</string>
+   </attribute>
+   <widget class="QTableView" name="tableView_Partenariat">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>70</y>
+      <width>1051</width>
+      <height>281</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_newPartenariat">
+    <property name="geometry">
+     <rect>
+      <x>780</x>
+      <y>38</y>
+      <width>131</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Nouvelle partenariat</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_actualiserPartenariat">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>39</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Actualiser</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_recherchePartenariat">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>48</y>
+      <width>161</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Rechercher un partenaire :</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_recherchePartenariat">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>46</y>
+      <width>221</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_notificationPartenariat">
+    <property name="geometry">
+     <rect>
+      <x>920</x>
+      <y>38</y>
+      <width>121</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_partenariatType">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>430</y>
+      <width>151</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Recherche par type</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_partenariatPays">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>402</y>
+      <width>151</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Recherche par pays</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_partenariatAnnee">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>430</y>
+      <width>151</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Recherche par annee</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_partenariatPoc">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>403</y>
+      <width>151</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Recherche par poc</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_etatPartenariat">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>10</y>
+      <width>311</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_etatPartenariatColor">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="Line" name="line_filtreRechercherPartenariat">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>380</y>
+      <width>401</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_filtreRecherchePartenariat">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>370</y>
+      <width>151</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Filtre recherche</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line_8">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>380</y>
+      <width>401</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_optionsPartenariat">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>370</y>
+      <width>151</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Options</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_affichagePartenariatNonActif">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>400</y>
+      <width>221</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Afficher les partenariats non-actif</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_affiachagePartenariatNonActifMois">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>430</y>
+      <width>321</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Afficher les partenariats qui ne sont plus actif dans </string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_PartenariatNonActifMois">
+    <property name="geometry">
+     <rect>
+      <x>950</x>
+      <y>428</y>
+      <width>31</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_moisAffichage">
+    <property name="geometry">
+     <rect>
+      <x>990</x>
+      <y>431</y>
+      <width>41</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>mois</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="POC">
+   <attribute name="title">
+    <string>POC</string>
+   </attribute>
+   <widget class="QLineEdit" name="lineEdit_recherchePOC">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>46</y>
+      <width>221</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_newPOC">
+    <property name="geometry">
+     <rect>
+      <x>910</x>
+      <y>38</y>
+      <width>131</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Nouveau POC</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_actualiserPOC">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>39</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Actualiser</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_recherchePOC">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>48</y>
+      <width>131</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Rechercher un POC  :</string>
+    </property>
+   </widget>
+   <widget class="QTableView" name="tableView_POC">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>71</y>
+      <width>1051</width>
+      <height>281</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_pocFax">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>430</y>
+      <width>151</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Recherche par fax</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line_filtreRechercherPartenariat_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>380</y>
+      <width>401</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_pocInstitution">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>402</y>
+      <width>181</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Recherche par institution</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_filtreRecherchePartenariat_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>370</y>
+      <width>151</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Filtre recherche</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_pocFonction">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>430</y>
+      <width>161</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Recherche par fonction</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_pocTelephone">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>403</y>
+      <width>181</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Recherche par telephone</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="Institution">
+   <attribute name="title">
+    <string>Institution</string>
+   </attribute>
+   <widget class="QTableView" name="tableView_Institution">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>71</y>
+      <width>1051</width>
+      <height>281</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_actualiserInstitution">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>39</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Actualiser</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_rechercheInstitution">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>48</y>
+      <width>161</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Rechercher une Institution : </string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_newInstitution">
+    <property name="geometry">
+     <rect>
+      <x>910</x>
+      <y>38</y>
+      <width>131</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Nouvelle Institution</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_rechercheInstitution">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>46</y>
+      <width>221</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_institutionPays">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>402</y>
+      <width>181</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Recherche par pays</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line_filtreRechercherInstitution">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>380</y>
+      <width>401</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_filtreRechercheInstitution">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>370</y>
+      <width>151</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Filtre recherche</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

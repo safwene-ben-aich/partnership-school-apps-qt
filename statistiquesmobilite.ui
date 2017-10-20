@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>statistiquesMobilite</class>
+ <widget class="QDialog" name="statistiquesMobilite">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1150</width>
+    <height>628</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QCustomPlot" name="customPlot" native="true">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>12</y>
+     <width>551</width>
+     <height>411</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QCustomPlot" name="customPlot_2" native="true">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>10</y>
+     <width>551</width>
+     <height>411</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QTableView" name="tableView">
+   <property name="geometry">
+    <rect>
+     <x>26</x>
+     <y>470</y>
+     <width>1091</width>
+     <height>111</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_capturerCustomPlot">
+   <property name="geometry">
+    <rect>
+     <x>469</x>
+     <y>432</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Capturer</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_capturerCustomPlot_2">
+   <property name="geometry">
+    <rect>
+     <x>1025</x>
+     <y>432</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Capturer</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_capturerTableauStat">
+   <property name="geometry">
+    <rect>
+     <x>1025</x>
+     <y>591</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Capturer</string>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QCustomPlot</class>
+   <extends>QWidget</extends>
+   <header>qcustomplot.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
